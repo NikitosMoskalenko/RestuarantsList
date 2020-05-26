@@ -12,11 +12,29 @@ final class TextViewController: UIViewController {
     
     enum TextFile {
         case cell
+        case myPlace
+        case titleFont
+        case restuarantNamesFont
+        case restuarantLocationLabelFont
+        case typeOfPlaceLabelFont
+        case newPlace
         
         var text: String {
             switch self {
             case .cell:
                 return "Cell"
+            case .myPlace:
+                return "My places"
+            case .titleFont:
+                return "SnellRoundhand-Black"
+            case .restuarantNamesFont:
+                return "AppleSDGothicNeo-SemiBold"
+            case .restuarantLocationLabelFont:
+                return "AppleSDGothicNeo-Regular"
+            case .typeOfPlaceLabelFont:
+                return "AppleSDGothicNeo-Thin"
+            case .newPlace:
+                return "Add new place"
             }
         }
     }
